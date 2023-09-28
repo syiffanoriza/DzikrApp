@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PagiPetangDzikirActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/tv_dzikir_pagi_petang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/banner_dzikir_pagi_petang"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_dzikir_pagi_petang">
+
+        <LinearLayout
+            android:id="@+id/ll_dzikir_pagi"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="@drawable/bg_dashboard_menu"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_dzikir_pagi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_dzikir_pagi"
+                android:textAlignment="center"
+                android:textColor="@color/primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dzikir_petang"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="@drawable/bg_dashboard_menu"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:ignore="TextSizeCheck">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_dzikir_petang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_dzikir_petang"
+                android:textAlignment="center"
+                android:textColor="@color/primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:id="@+id/cv_dzikir_pagi"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_dzikir_pagi_petang"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/cv_dzikir_pagi">-->
+
+
+<!--&lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:scaleType="centerCrop"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@drawable/ic_morning"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:contentDescription="@string/content_txt_icon_btn_dzikir_pagi"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="@color/primary"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:padding="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="@string/txt_dzikir_pagi"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="18sp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textStyle="bold"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <ImageButton&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/img_btn_dzikir_pagi"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="bottom|end"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginEnd="16dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginBottom="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="@android:color/transparent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@drawable/bg_btn_dzikir"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:contentDescription="@string/content_txt_icon_btn_dzikir_pagi"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </com.google.android.material.card.MaterialCardView>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <com.google.android.material.card.MaterialCardView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/cv_dzikir_petang"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="200dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:cardCornerRadius="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintTop_toBottomOf="@id/cv_dzikir_pagi">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:scaleType="centerCrop"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@drawable/ic_evening"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:contentDescription="@string/content_txt_icon_btn_dzikir_petang"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="@color/primary"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:padding="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="@string/txt_dzikir_petang"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="18sp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textStyle="bold"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <ImageButton&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/img_btn_dzikir_petang"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="bottom|end"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginEnd="16dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginBottom="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="@android:color/transparent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@drawable/bg_btn_dzikir"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:contentDescription="@string/content_txt_icon_btn_dzikir_pagi"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </com.google.android.material.card.MaterialCardView>&ndash;&gt;-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
